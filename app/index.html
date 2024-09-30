@@ -4,18 +4,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Food Delivery</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header class="header"></header>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <nav class="menu">
 
-  <main class="main"></main>
+          <a class="header__logo logo" href="#">
+            <img class="logo__img" src="images/eluwe.svg" height="48" width="92" alt="logo">
+          </a>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Booking</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Get Apps</a>
+            </li>
+          </ul>
+
+          <button class="header__btn" type="button">Sign In
+            <span class="sr-only">Login</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="title hero__title">Special food every time for you!</h1>
+        <p class="hero__text">Are you hungry because you're home now? Don't worry, now you can order food via yaour
+          cellphone!</p>
+
+        <form class="hero__form search-form" action="">
+
+          <div class="search-form__inner">
+            <label aria-label="search"></label>
+            <input class="search__input" placeholder="eg : Cheese Burgers ..." required type="text">
+            <button class="search-form__btn btn" id="search" type="submit">Search</button>
+          </div>
+        </form>
+        <a class="arrow-link" href="#"></a>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="container">
+        <h2 class="popular__title title">popular food today</h2>
+        <p class="popular__text">Tincidunt integer facilisis lacinia morbi cras vitae purus. Mauris, amet, massa donec
+          aenean sed sem.</p>
+
+        <ul class="popular__list">
+          <li class="popular__item">
+            <article class="product-card"><img class="product-card__img" src="images/burger.webp" width="218"
+                height="160" loading="lazy" alt="burger">
+              <h3 class="product-card__name">Duoble beef cheese burgers</h3>
+              <span class="product-card__price"><span>$</span>34.55</span>
+              <a class="produc-card__order" href="">Order Now</a>
+            </article>
+          </li>
+
+          <li class="popular__item">
+            <article class="product-card"><img class="product-card__img" src="images/pizza.webp" width="210"
+                height="210" loading="lazy" alt="pizza">
+              <h3 class="product-card__name">Italian Pizza Cheese Flavour</h3>
+              <span class="product-card__price"><span>$</span>14.25</span>
+              <a class="produc-card__order" href="">Order Now</a>
+            </article>
+          </li>
+
+          <li class="popular__item">
+            <article class="product-card"><img class="product-card__img" src="images/hot-dog.webp" width="203"
+                height="160" loading="lazy" alt="hotdog">
+              <h3 class="product-card__name">Hot dog Extra chili sauce</h3>
+              <span class="product-card__price"><span>$</span>24.55</span>
+              <a class="produc-card__order" href="">Order Now</a>
+            </article>
+          </li>
+        </ul>
+        <a class="arrow-link" href="#"></a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__box">
+
+        <div class="about__content">
+          <span>About Us</span>
+          <h2 class="about__title title">We Always Provide Quality Food For You</h2>
+          <p class="about__text">Egestas viverra imperdiet neque, tincidunt lectus. Ullamcorper ullamcorper gravida quis
+            metus amet quisque dictum non. Iaculis eros morbi vitae, cursus gravida interdum facilisis gravida arcu.
+            Pretium dictumst neque feugiat mollis nisl et massa. </p>
+          <button class="about__btn btn">View More</button>
+        </div>
+
+        <div class="about__images">
+          <div class="about__breakfast">
+            <img class="about__images" src="images/plate.webp" width="195" height="197" alt="breakfast">
+            <span class="about__price"><span>$</span>14,5</span>
+          </div>
+        </div>
 
 
-  <footer class="footer"></footer>
+      </div>
+    </section>
+
+    <section class="booking">
+      <div class="container">
+        <div class="booking__box">
+          <a class="arrow-link booking__link" href="#"></a>
+          <h2 class="booking__title title">Get Your promo, and Book now!</h2>
+          <p class="booking__text">Suspendisse mattis tincidunt leo posuere. Ullamcorper odio pellentesque sollicitudin
+            morbi tristique est est montes.</p>
+        </div>
+        <form class="booking__form" action="">
+
+          <div class="form__box">
+            <div class="form__field">
+              <label class="aria-label" for="date"></label>
+              <input class="form__input" type="date" id="date" name="date" placeholder="dd-mm-yy" required>
+            </div>
+
+            <div class="form__field">
+              <label class="aria-label" for="person"></label>
+              <input class="form__input" type="text" id="person" name="person" placeholder="person" required>
+            </div>
+
+            <div class="form__field">
+              <label class="aria-label" for="email"></label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="email" required>
+            </div>
+
+            <div class="form__field"></div>
+            <label class="aria-label" for="phone"></label>
+            <input class="form__input" type="tel" id="phone" name="phone" placeholder="phone" required>
+          </div>
+          <button class="btn form__btn" type="submit">Booking Now</button>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+
+        <div class="reviews__top">
+          <h2 class="reviews__title title">What our custumers are saying</h2>
+          <div class="reviews__box">
+            <button class="reviews__btn" type="button"></button>
+            <button class="reviews__btn" type="button"></button>
+          </div>
+        </div>
+
+        <div class="reviews-slider">
+          <ul class="reviews-slider__list">
+            <li class="reviews-slider__item">
+              <figure class="reviews-card">
+                <h3 class="reviews-card__title">Very delicious, really like the food here</h3>
+                <blockquote class="reviews-card__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Velit senectus imperdiet bibendum enim consequat donec diam, posuere at. Scelerisque odio volutpat
+                  volutpat, aenean pharetra orci. Feugiat odio fermentum euismod nibh diam sem dictum. Faucibus non null
+                </blockquote>
+                <figcaption class="reviews-card__info">
+                  <img class="reviews-card__img" src="images/surya.webp" width="68" height="68" loading="lazy"
+                    alt="reviews photo">
+
+                  <div class="reviews-card__details">
+                    <div class="reviews-card__author">Onky Surya</div>
+                    <div class="reviews-card__stars"></div>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="reviews-slider__item">
+              <figure class="reviews-card">
+                <h3 class="reviews-card__title">Oh my god! This is the best food ever! </h3>
+                <blockquote class="reviews-card__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Velit senectus imperdiet bibendum enim consequat donec diam, posuere at. Scelerisque odio volutpat
+                  volutpat, aenean pharetra orci. Feugiat o
+                </blockquote>
+                <figcaption class="reviews-card__info">
+                  <img class="reviews-card__img" src="images/cladya.webp" width="68" height="68" loading="lazy"
+                    alt="reviews photo">
+
+                  <div class="reviews-card__details">
+                    <div class="reviews-card__author">Cladya</div>
+                    <div class="reviews-card__stars"></div>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer__logo logo" href="#">
+        <img class="logo__img" src="images/eluwe.svg" height="48" width="92" loading="lazy" alt="logo">
+      </a>
+
+      <div class="footer__text">Maecenas amet pretium facilisi quis facilisis eget. Viverra tristique massa magna dictum
+        enim.</div>
+
+      <ul class="footer-menu">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Home</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">About Us</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Booking</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Get Apps</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Contact</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">FAQs</a>
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+            <!-- <svg class="social__icon">
+              <use xlink:href="images/sprite.svg#icon-facebook"></use>
+            </svg> -->
+            <span class="sr-only">go to our facebook</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+            <!-- <svg class="social__icon">
+              <use xlink:href="images/sprite.svg#icon-twitter"></use>
+            </svg> -->
+            <span class="sr-only">go to our twitter</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+            <!-- <svg class="social__icon">
+              <use xlink:href="images/sprite.svg#icon-instagram"></use>
+            </svg> -->
+            <span class="sr-only">go to our instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="js/main.min.js"></script>
 

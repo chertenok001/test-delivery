@@ -1,15 +1,23 @@
+$white:#fff;
+$orange:#ff7352;
+$green:#27ad55;
+$black:#121212;
+$silver:#f6f6f6;
 
-// $accent:#FF6838;
-// $default:#31352B;
+%dmsans-400 {
+  font-family: 'DM sans';
+  font-weight: 400;
+  font-style: normal;
+}
 
+%dmsans-700 {
+  font-family: 'DM sans';
+  font-weight: 700;
+  font-style: bold;
+}
 
-// %rubik-300 {
-//   font-family: 'Rubik', sans-serif;
-//   font-weight: 300;
-// }
-
-// %rubik-italic {
-//   font-family: 'Rubik';
-//   font-weight: 400;
-//   font-style: italic;
-// }
+%dinalt-700 {
+  font-family: 'DIN Alternate';
+  font-weight: 700;
+  font-style: bold;
+}

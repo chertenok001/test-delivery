@@ -2,10 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 16px;
   font-weight: 400;
-  // background-color: $accent;
+  line-height: 1.5;
+  color: $black;
+  background-color: $white;
+  @extend %dmsans-400;
 
 }
 
@@ -31,8 +33,3 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-
-
-
