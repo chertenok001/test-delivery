@@ -1,9 +1,10 @@
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+@mixin content($display:block, $pos:absolute, $content: '') {
   content: $content;
   display: $display;
   position: $pos;
 }
-// @include pseudo;
+
+// @include content;
 
 @mixin mq($width, $type: max) {
   @if map_has_key($breakpoints, $width) {
@@ -18,6 +19,7 @@
     }
   }
 }
+
 // .header {
 //   padding: 20px;
 
@@ -41,16 +43,17 @@
     -webkit-box-orient: vertical;
   }
 }
+
 // .class {
 //   font-size: 14px;
 //   @include line-clamp(3);
 // }
 
 @mixin burger {
- $burgerwidth:44px; 
- $burgerheight:44px; 
+  $burgerwidth: 44px;
+  $burgerheight: 44px;
   position: relative;
-  color: $burgercolor; 
+  color: $burgercolor;
 }
 
 // & span,

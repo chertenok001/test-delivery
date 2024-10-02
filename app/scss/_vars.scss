@@ -4,20 +4,28 @@ $green:#27ad55;
 $black:#121212;
 $silver:#f6f6f6;
 
-%dmsans-400 {
-  font-family: 'DM sans';
+%sans-400 {
+  font-family: 'DMsans',sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
-%dmsans-700 {
-  font-family: 'DM sans';
+%sans-700 {
+  font-family: 'DMsans' ,sans-serif;
   font-weight: 700;
-  font-style: bold;
 }
 
-%dinalt-700 {
-  font-family: 'DIN Alternate';
+%alternate{
+  font-family: 'DINAlternate' ,sans-serif;
   font-weight: 700;
-  font-style: bold;
 }
+
+%bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+$breakpoints: ("phone": 576px,
+  "tablet": 768px,
+  "tablet-2": 992px,
+  "desktop": 1200px);
