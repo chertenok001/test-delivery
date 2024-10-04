@@ -8,6 +8,7 @@ body {
   color: $black;
   background-color: $white;
   @extend %sans-400;
+  overflow-x: hidden;
 }
 
 
@@ -45,9 +46,13 @@ body {
   }
 }
 
-.main {
-  flex-grow: 1;
+
+
+section {
+  margin: 0;
+  height: fit-content;
 }
+
 
 .container {
   max-width: 1200px;
@@ -75,4 +80,28 @@ body {
   width: fit-content;
   @extend %sans-700;
   border-radius: 12px;
+}
+
+.arrow-link {
+  width: 64px;
+  height: 64px;
+  background-color: $orange;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    @extend %content;
+    background-image: url('../images/icons/icon-ellipse.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    filter: invert(52%) sepia(76%) saturate(778%) hue-rotate(325deg) brightness(102%) contrast(108%);
+    width: 81px;
+    height: 80px;
+  }
 }

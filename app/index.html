@@ -46,7 +46,7 @@
 
     <section class="hero" style="background-image:url('images/ellipse.svg')">
       <div class="container">
-       
+
         <h1 class=" hero__title title title--lines">Special food every time for you!</h1>
         <p class="hero__text">Are you hungry because you're home now? Don't worry, now you can order food via yaour
           cellphone!</p>
@@ -59,17 +59,17 @@
             <button class="search-form__btn btn" id="search" type="submit">Search</button>
           </div>
         </form>
-        
-        <a class="hero__down " href="#">
+
+        <a class="hero__down arrow-link" href="#">
           <svg class=" hero__link">
             <use xlink:href="images/sprite.svg#icon-arrow"></use>
           </svg>
-
         </a>
+
       </div>
     </section>
 
-     <section class="popular">
+    <section class="popular">
       <div class="container">
         <h2 class="popular__title title title--lines">Popular Food Today</h2>
         <p class="popular__text">Tincidunt integer facilisis lacinia morbi cras vitae purus. Mauris, amet, massa donec
@@ -77,37 +77,64 @@
 
         <ul class="popular__list">
           <li class="popular__item">
-            <article class="product-card"><img class="product-card__img" src="images/burger.webp" width="218"
-                height="160" loading="lazy" alt="burger">
-              <h3 class="product-card__name">Duoble beef cheese burgers</h3>
-              <span class="product-card__price"><span>$</span>34.55</span>
-              <a class="produc-card__order" href="">Order Now</a>
+            <article class="product-card">
+              <img class="product-card__img" src="images/burger.webp" width="218" height="160" loading="lazy"
+                alt="burger">
+              <div class="product-card__content">
+                <h3 class="product-card__name">Duoble beef cheese burgers</h3>
+                <span class="product-card__price"><span>$</span>34.55</span>
+              </div>
+              <a class="product-card__order" href="">Order Now
+                <svg class="order__icon">
+                  <use xlink:href="images/sprite.svg#icon-left"></use>
+                </svg>
+              </a>
             </article>
           </li>
 
           <li class="popular__item">
-            <article class="product-card"><img class="product-card__img" src="images/pizza.webp" width="210"
-                height="210" loading="lazy" alt="pizza">
-              <h3 class="product-card__name">Italian Pizza Cheese Flavour</h3>
-              <span class="product-card__price"><span>$</span>14.25</span>
-              <a class="produc-card__order" href="">Order Now</a>
+            <article class="product-card">
+              <img class="product-card__img" src="images/pizza.webp" width="210" height="210" loading="lazy"
+                alt="pizza">
+              <div class="product-card__content">
+                <h3 class="product-card__name">Italian Pizza Cheese Flavour</h3>
+                <span class="product-card__price"><span>$</span>14.25</span>
+              </div>
+              <a class="product-card__order" href="">Order Now
+                <svg class="order__icon">
+                  <use xlink:href="images/sprite.svg#icon-left"></use>
+                </svg>
+              </a>
             </article>
           </li>
 
           <li class="popular__item">
-            <article class="product-card"><img class="product-card__img" src="images/hot-dog.webp" width="203"
-                height="160" loading="lazy" alt="hotdog">
-              <h3 class="product-card__name">Hot dog Extra chili sauce</h3>
-              <span class="product-card__price"><span>$</span>24.55</span>
-              <a class="produc-card__order" href="">Order Now</a>
+            <article class="product-card">
+              <img class="product-card__img" src="images/hot-dog.webp" width="203" height="160" loading="lazy"
+                alt="hotdog">
+              <div class="product-card__content">
+                <h3 class="product-card__name">Hot dog Extra chili sauce</h3>
+                <span class="product-card__price"><span>$</span>24.55</span>
+              </div>
+              <a class="product-card__order" href="#">Order Now
+                <svg class="order__icon">
+                  <use xlink:href="images/sprite.svg#icon-left"></use>
+                </svg>
+              </a>
             </article>
           </li>
         </ul>
-        <a class="arrow-link" href="#"></a>
-      </div>
-    </section> 
 
-    <!-- <section class="about">
+        <a class="popular__link arrow-link" href="#">
+          <svg class=" hero__link">
+            <use xlink:href="images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="about">
       <div class="container about__box">
 
         <div class="about__content">
@@ -128,9 +155,9 @@
 
 
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="booking">
+    <section class="booking">
       <div class="container">
         <div class="booking__box">
           <a class="arrow-link booking__link" href="#"></a>
@@ -164,9 +191,9 @@
         </form>
 
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="reviews">
+    <section class="reviews">
       <div class="container">
 
         <div class="reviews__top">
@@ -220,7 +247,7 @@
 
         </div>
       </div>
-    </section> -->
+    </section>
 
   </main>
 

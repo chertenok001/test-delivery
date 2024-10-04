@@ -5,17 +5,17 @@ $black:#121212;
 $silver:#f6f6f6;
 
 %sans-400 {
-  font-family: 'DMsans',sans-serif;
+  font-family: 'DMsans', sans-serif;
   font-weight: 400;
 }
 
 %sans-700 {
-  font-family: 'DMsans' ,sans-serif;
+  font-family: 'DMsans', sans-serif;
   font-weight: 700;
 }
 
-%alternate{
-  font-family: 'DINAlternate' ,sans-serif;
+%alternate {
+  font-family: 'DINAlternate', sans-serif;
   font-weight: 700;
 }
 
@@ -23,6 +23,12 @@ $silver:#f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+%content {
+  content: '';
+  position: absolute;
+  display: block;
 }
 
 $breakpoints: ("phone": 576px,
