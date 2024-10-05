@@ -21,11 +21,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: -2;
-    background-position: center 1500px, center 1500px;
+    background-position: center 1300px, center 1300px;
   }
 }
-
-
 
 
 .header {
@@ -121,13 +119,11 @@
 
   @keyframes titleLeft {
     from {
-
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
     }
 
     to {
-
       transform: translate3d(0, 0, 0);
     }
   }
@@ -146,7 +142,6 @@
 
     to {
       transform: translate3d(0, 0, 0) scaleX(-1);
-
     }
   }
 
@@ -160,7 +155,6 @@
     max-width: 780px;
     width: 100%;
     margin-bottom: 30px;
-
 
     &::after,
     &::before {
@@ -190,14 +184,13 @@
     bottom: 70px;
   }
 
-
-  &__link {
-    width: 20px;
-    height: 20px;
-    stroke: $white;
-    fill: $orange;
-    stroke-width: 2;
-  }
+  // .arrow-link__icon{
+  //   width: 20px;
+  //   height: 20px;
+  //   stroke: $white;
+  //   fill: $orange;
+  //   stroke-width: 2;
+  // }
 }
 
 .search-form {
@@ -251,6 +244,7 @@
   position: relative;
 
   &__title {
+    text-align: center;
     margin-bottom: 16px;
   }
 
@@ -321,7 +315,6 @@
     right: 0;
     margin: 0 auto;
     bottom: 192px;
-   
   }
 
   &__name {
@@ -330,6 +323,7 @@
     text-transform: capitalize;
     color: $black;
     margin-bottom: 17px;
+    font-weight: 700;
   }
 
   &__price {
@@ -357,5 +351,69 @@
     height: 16px;
     fill: $white;
   }
-
 }
+
+.about {
+  padding: 150px 0 75px;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 438px;
+    width: 100%;
+    margin-right: 100px;
+
+    span {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: $green;
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba($black, 0.5);
+    margin-bottom: 44px;
+  }
+
+  &__images {
+    position: relative;
+    background-image: url('../images/table.webp');
+    width: 550px;
+    height: 550px;
+    @extend %bg;
+  }
+
+  &__breakfast {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    transform: translateY(-30px);
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    padding: 7px 12px;
+    background-color: $green;
+    color: $white;
+    border-radius: 20px;
+    font-weight: 700;
+  }
+}
+
+@import './page-booking/booking'

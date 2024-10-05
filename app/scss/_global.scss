@@ -22,37 +22,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // gap:35px;
+    position: relative;
+ 
     &::before,
     &::after {
-      content: '';
-      display: block;
-      top: 50%;
+      @extend %content;
       max-width: 56px;
       width: 100%;
-
       height: 3px;
       background-color: $black;
     }
-
     &::after {
-      transform: translateX(40px);
+      right: -27px;
     }
-
     &::before {
-      transform: translateX(-40px);
+      left: -27px;
     }
   }
 }
-
-
 
 section {
   margin: 0;
   height: fit-content;
 }
-
 
 .container {
   max-width: 1200px;
@@ -100,8 +92,15 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
-    filter: invert(52%) sepia(76%) saturate(778%) hue-rotate(325deg) brightness(102%) contrast(108%);
     width: 81px;
     height: 80px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    stroke: $white;
+    fill: $orange;
+    stroke-width: 2;
   }
 }

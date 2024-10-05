@@ -61,7 +61,7 @@
         </form>
 
         <a class="hero__down arrow-link" href="#">
-          <svg class=" hero__link">
+          <svg class="hero__link arrow-link__icon">
             <use xlink:href="images/sprite.svg#icon-arrow"></use>
           </svg>
         </a>
@@ -71,7 +71,7 @@
 
     <section class="popular">
       <div class="container">
-        <h2 class="popular__title title title--lines">Popular Food Today</h2>
+        <h2 class="popular__title title">Popular Food Today</h2>
         <p class="popular__text">Tincidunt integer facilisis lacinia morbi cras vitae purus. Mauris, amet, massa donec
           aenean sed sem.</p>
 
@@ -125,8 +125,8 @@
           </li>
         </ul>
 
-        <a class="popular__link arrow-link" href="#">
-          <svg class=" hero__link">
+        <a class="popular__down arrow-link" href="#">
+          <svg class=" popular__link arrow-link__icon">
             <use xlink:href="images/sprite.svg#icon-arrow"></use>
           </svg>
         </a>
@@ -138,7 +138,7 @@
       <div class="container about__box">
 
         <div class="about__content">
-          <span>About Us</span>
+          <span class="about__span">About Us</span>
           <h2 class="about__title title">We Always Provide Quality Food For You</h2>
           <p class="about__text">Egestas viverra imperdiet neque, tincidunt lectus. Ullamcorper ullamcorper gravida quis
             metus amet quisque dictum non. Iaculis eros morbi vitae, cursus gravida interdum facilisis gravida arcu.
@@ -148,44 +148,48 @@
 
         <div class="about__images">
           <div class="about__breakfast">
-            <img class="about__images" src="images/plate.webp" width="195" height="197" alt="breakfast">
+            <img class="about__img" src="images/plate.webp" width="195" height="197" alt="breakfast">
             <span class="about__price"><span>$</span>14,5</span>
           </div>
         </div>
-
 
       </div>
     </section>
 
     <section class="booking">
-      <div class="container">
+      <div class="container booking__container">
         <div class="booking__box">
-          <a class="arrow-link booking__link" href="#"></a>
+          <a class="arrow-link booking__down" href="#">
+            <svg class=" booking__link arrow-link__icon">
+              <use xlink:href="images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </a>
           <h2 class="booking__title title">Get Your promo, and Book now!</h2>
           <p class="booking__text">Suspendisse mattis tincidunt leo posuere. Ullamcorper odio pellentesque sollicitudin
             morbi tristique est est montes.</p>
         </div>
-        <form class="booking__form" action="">
+        <form class="booking__form form" action="">
 
           <div class="form__box">
-            <div class="form__field">
+            <div class="form__field form__field--data">
               <label class="aria-label" for="date"></label>
-              <input class="form__input" type="date" id="date" name="date" placeholder="dd-mm-yy" required>
+              <input class="form__input" type="text" id="date" name="date" placeholder="dd-mm-yy" required>
             </div>
 
-            <div class="form__field">
+            <div class="form__field form__field--person">
               <label class="aria-label" for="person"></label>
-              <input class="form__input" type="text" id="person" name="person" placeholder="person" required>
+              <input class="form__input " type="text" id="person" name="person" placeholder="person" required>
             </div>
 
-            <div class="form__field">
+            <div class="form__field form__field--email">
               <label class="aria-label" for="email"></label>
-              <input class="form__input" type="email" id="email" name="email" placeholder="email" required>
+              <input class="form__input " type="email" id="email" name="email" placeholder="email" required>
             </div>
 
-            <div class="form__field"></div>
-            <label class="aria-label" for="phone"></label>
-            <input class="form__input" type="tel" id="phone" name="phone" placeholder="phone" required>
+            <div class="form__field form__field--phone">
+              <label class="aria-label " for="phone"></label>
+              <input class="form__input " type="tel" id="phone" name="phone" placeholder="phone" required>
+            </div>
           </div>
           <button class="btn form__btn" type="submit">Booking Now</button>
         </form>
