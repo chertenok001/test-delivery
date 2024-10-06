@@ -51,7 +51,7 @@
         <p class="hero__text">Are you hungry because you're home now? Don't worry, now you can order food via yaour
           cellphone!</p>
 
-        <form class="hero__form search-form" action="">
+        <form class="hero__form search-form" action="#">
 
           <div class="search-form__inner">
             <label aria-label="search"></label>
@@ -85,7 +85,7 @@
                 <span class="product-card__price"><span>$</span>34.55</span>
               </div>
               <a class="product-card__order" href="">Order Now
-                <svg class="order__icon">
+                <svg class="product-card__icon">
                   <use xlink:href="images/sprite.svg#icon-left"></use>
                 </svg>
               </a>
@@ -101,7 +101,7 @@
                 <span class="product-card__price"><span>$</span>14.25</span>
               </div>
               <a class="product-card__order" href="">Order Now
-                <svg class="order__icon">
+                <svg class="product-card__icon">
                   <use xlink:href="images/sprite.svg#icon-left"></use>
                 </svg>
               </a>
@@ -117,7 +117,7 @@
                 <span class="product-card__price"><span>$</span>24.55</span>
               </div>
               <a class="product-card__order" href="#">Order Now
-                <svg class="order__icon">
+                <svg class="product-card__icon">
                   <use xlink:href="images/sprite.svg#icon-left"></use>
                 </svg>
               </a>
@@ -168,7 +168,7 @@
           <p class="booking__text">Suspendisse mattis tincidunt leo posuere. Ullamcorper odio pellentesque sollicitudin
             morbi tristique est est montes.</p>
         </div>
-        <form class="booking__form form" action="">
+        <form class="booking__form form" action="#">
 
           <div class="form__box">
             <div class="form__field form__field--data">
@@ -203,14 +203,51 @@
         <div class="reviews__top">
           <h2 class="reviews__title title">What our custumers are saying</h2>
           <div class="reviews__box">
-            <button class="reviews__btn" type="button"></button>
-            <button class="reviews__btn" type="button"></button>
+            <button class="reviews__btn reviews__btn--prev" type="button"></button>
+            <button class="reviews__btn reviews__btn--next" type="button"></button>
           </div>
         </div>
 
-        <div class="reviews-slider">
-          <ul class="reviews-slider__list">
-            <li class="reviews-slider__item">
+        <div class="reviews-slider swiper">
+          <ul class="reviews-slider__list swiper-wrapper">
+            <li class="reviews-slider__item swiper-slide">
+              <figure class="reviews-card">
+                <h3 class="reviews-card__title">Very delicious, really like the food here</h3>
+                <blockquote class="reviews-card__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Velit senectus imperdiet bibendum enim consequat donec diam, posuere at. Scelerisque odio volutpat
+                  volutpat, aenean pharetra orci. Feugiat odio fermentum euismod nibh diam sem dictum. Faucibus non null
+                </blockquote>
+                <figcaption class="reviews-card__info">
+                  <img class="reviews-card__img" src="images/surya.webp" width="68" height="68" loading="lazy"
+                    alt="reviews photo">
+                  <div class="reviews-card__details">
+                    <div class="reviews-card__author">Onky Surya</div>
+                    <div class="reviews-card__stars"></div>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="reviews-slider__item swiper-slide">
+              <figure class="reviews-card">
+                <h3 class="reviews-card__title">Oh my god! This is the best food ever! </h3>
+                <blockquote class="reviews-card__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Velit senectus imperdiet bibendum enim consequat donec diam, posuere at. Scelerisque odio volutpat
+                  volutpat, aenean pharetra orci. Feugiat o
+                </blockquote>
+                <figcaption class="reviews-card__info">
+                  <img class="reviews-card__img" src="images/cladya.webp" width="68" height="68" loading="lazy"
+                    alt="reviews photo">
+
+                  <div class="reviews-card__details">
+                    <div class="reviews-card__author">Cladya</div>
+                    <div class="reviews-card__stars"></div>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="reviews-slider__item swiper-slide">
               <figure class="reviews-card">
                 <h3 class="reviews-card__title">Very delicious, really like the food here</h3>
                 <blockquote class="reviews-card__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -229,7 +266,7 @@
               </figure>
             </li>
 
-            <li class="reviews-slider__item">
+            <li class="reviews-slider__item swiper-slide">
               <figure class="reviews-card">
                 <h3 class="reviews-card__title">Oh my god! This is the best food ever! </h3>
                 <blockquote class="reviews-card__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -289,27 +326,27 @@
       <ul class="social">
         <li class="social__item">
           <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-            <!-- <svg class="social__icon">
+            <svg class="social__icon">
               <use xlink:href="images/sprite.svg#icon-facebook"></use>
-            </svg> -->
+            </svg>
             <span class="sr-only">go to our facebook</span>
           </a>
         </li>
 
         <li class="social__item">
           <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-            <!-- <svg class="social__icon">
+            <svg class="social__icon">
               <use xlink:href="images/sprite.svg#icon-twitter"></use>
-            </svg> -->
+            </svg>
             <span class="sr-only">go to our twitter</span>
           </a>
         </li>
 
         <li class="social__item">
           <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-            <!-- <svg class="social__icon">
+            <svg class="social__icon">
               <use xlink:href="images/sprite.svg#icon-instagram"></use>
-            </svg> -->
+            </svg>
             <span class="sr-only">go to our instagram</span>
           </a>
         </li>

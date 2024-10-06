@@ -6,7 +6,6 @@
 @import 'mixin';
 
 
-
 .main {
   flex-grow: 1;
   position: relative;
@@ -24,7 +23,6 @@
     background-position: center 1300px, center 1300px;
   }
 }
-
 
 .header {
   padding-top: 100px;
@@ -144,7 +142,6 @@
       transform: translate3d(0, 0, 0) scaleX(-1);
     }
   }
-
 
   &__title {
     margin: 0 auto;
@@ -346,7 +343,7 @@
     opacity: 0;
   }
 
-  .order__icon {
+  &__icon {
     width: 20px;
     height: 16px;
     fill: $white;
@@ -416,4 +413,6 @@
   }
 }
 
-@import './page-booking/booking'
+@import './page-booking/booking';
+
+@import './page-reviews/reviews';

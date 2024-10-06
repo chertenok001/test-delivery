@@ -1,13 +1,11 @@
 $(function () {
-  wow = new WOW(
-    {
-    boxClass:     'wow',      // default
+  wow = new WOW({
+    boxClass: 'wow', // default
     animateClass: 'animate__animated', // default
-    offset:       0,          // default
-    mobile:       true,       // default
-    live:         true        // default
-  }
-  )
+    offset: 0, // default
+    mobile: true, // default
+    live: true // default
+  })
   wow.init();
 
   window.onscroll = function showHeader() {
@@ -19,12 +17,21 @@ $(function () {
     }
   };
 
- 
+
+  const swiper = new Swiper('.swiper', {
+
+  //  spaceBetween:180,
+    slidesPerView: 2,
+
+  
+
+    navigation: {
+      nextEl: '.reviews__btn--prev',
+      prevEl: '.reviews__btn--next',
+    },
+
+
+  });
+
+
 });
-
-
-
-
-
-
-

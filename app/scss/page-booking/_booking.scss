@@ -10,6 +10,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('../images/white-ellipse.svg'),
+      url('../images/white-ellipse.svg');
+    background-repeat: no-repeat;
+    background-size: 345px 345px, 190px 190px;
+    background-position: top 100px left -70px,
+      top 70px right -18px;
+
+    &::after,
+    &::before {
+      @extend %content;
+      @extend %bg;
+    }
+
+    &::before {
+      width: 220px;
+      height: 160px;
+      background-image: url('../images/leaf-left.webp');
+      top: 50px;
+      left: -120px;
+    }
+
+
+    &::after {
+      width: 140px;
+      height: 110px;
+      background-image: url('../images/leaf-right.webp');
+      bottom: 110px;
+      right: -70px;
+    }
+
+
   }
 
 
