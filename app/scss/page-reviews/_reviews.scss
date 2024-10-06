@@ -1,5 +1,5 @@
 .reviews {
-  padding: 60px 0;
+  padding: 60px 0 100px;
 
   &__top {
     display: flex;
@@ -24,7 +24,7 @@
       background-image: url('../images/sprite.svg#icon-min-left');
       filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(105deg) brightness(93%) contrast(105%);
       width: 40px;
-      cursor:not-allowed;
+      cursor: not-allowed;
     }
 
 
